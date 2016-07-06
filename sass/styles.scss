@@ -13,13 +13,13 @@ $light_color: '141,163,69';
 // Mixins
 
 // Styles
+
 body{
-  display: block;
+  display: inline-block;
   background-color: orange;
   text-align: center;
   color: #EEE;
   padding: 20px;
-  // box-sizing: border-box;
   float: center;
 
 
@@ -34,16 +34,19 @@ body{
 
   }
   .block_family {
+    box-sizing: border-box;
+    margin: auto;
     float: center;
   }
 
   .block_family li{
     box-sizing: border-box;
-    margin: auto;
-    margin-bottom: 20px;
+    // margin: auto;
+    margin: 5px;
     background-color: white;
     max-width: 500px;
-    width: 100%;
+    width: 48%;
+    float: left;
   }
 
 
@@ -61,15 +64,18 @@ body{
     color: black;
     background-color: orange;
   }
+  .block_family{
+    float: center;
+  }
 
   .block_family li{
     margin: auto;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin: 5px;
     background-color: orange;
-    width: 100%;
+    width: 32%;
     max-width: 800px;
-    float: center;
+    float: left;
 
   }
 }
@@ -96,9 +102,8 @@ h2{
 
 
 .block_family{
-  margin:auto;
-
-  // float: center;
+  margin: auto;
+  float: center;
 }
 
 .block_family li{
@@ -110,5 +115,5 @@ h2{
   padding: 20px;
   max-width: 350px;
   width: 100%;
-  // float: center;
+  float: center;
 }
